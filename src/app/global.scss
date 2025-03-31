@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin : 0;
+}
+
+:root {
+    --font-be-vietnam-pro: "Be Vietnam Pro", sans-serif;
+}
+
+:root {
+    --snow-color         : #FAFAFA;
+    --davy-grey-color    : #595959;
+    --chrome-yellow-color: #FFAB00;
+    --pale-pink-color    : #fff3d1df;
+    --white-color        : #FFFFFF;
+}
+
+h1 {
+    font-size  : 49px;
+    font-weight: 500;
+}
+
+.container {
+    width      : 100%;
+    margin     : 0 auto;
+    font-family: var(--font-be-vietnam-pro);
+}
+
+/* Breakpoints giống Bootstrap */
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1440px;
+    }
+}

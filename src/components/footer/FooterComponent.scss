@@ -1,0 +1,168 @@
+.footer-container {
+    background-color: var(--snow-color);
+    height          : 224px;
+    padding         : 24px 40px;
+    display         : flex;
+    justify-content : space-between;
+    font-family     : var(--font-be-vietnam-pro);
+
+    .content-left {
+        .logo {
+            font-size     : 20.44px;
+            line-height   : 46px;
+            font-weight   : 800;
+            letter-spacing: 0.41px;
+            display       : flex;
+            align-items   : center;
+            gap           : 10px;
+
+            .footer-logo {
+                width : 29.44px;
+                height: 33.22px;
+            }
+        }
+
+        .download {
+            width : 171.15px;
+            height: 87.26px;
+
+            .footer-qr {
+                background     : url("./../../assets/footer-qr.png") no-repeat;
+                background-size: contain;
+                width          : 100%;
+                height         : 100%;
+            }
+        }
+    }
+
+    .content-center {
+        width         : 235px;
+        font-size     : 16px;
+        font-weight   : 500;
+        line-height   : 24px;
+        color         : var(--davy-grey-color);
+        display       : flex;
+        flex-direction: column;
+        gap           : 16px;
+
+        .contact {
+            display    : flex;
+            gap        : 8px;
+            align-items: center;
+
+            img {
+                height: 24px;
+                width : 24px;
+            }
+        }
+
+        .social {
+            display       : flex;
+            gap           : 8px;
+            flex-direction: column;
+
+            .icon {
+                display: flex;
+                gap    : 16px;
+
+                img {
+                    height: 20px;
+                    width : 20px;
+                }
+            }
+        }
+
+    }
+
+    .content-right {
+        color         : #595959;
+        height        : 160px;
+        width         : 607.85px;
+        display       : flex;
+        flex-direction: column;
+        gap           : 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        padding       : 24px 12px;
+        flex-direction: column;
+        gap           : 36px;
+        height        : auto;
+
+        .content-left {
+            display       : flex;
+            flex-direction: column;
+            gap           : 8px;
+
+            .download {
+                width : 297.21px;
+                height: 46.87px;
+
+                .footer-qr {
+                    background     : url("./../../assets/download-phone.png") no-repeat;
+                    background-size: contain;
+                }
+            }
+        }
+
+        .content-center {
+            font-size: 14px;
+        }
+
+        .content-right {
+            width         : 351px;
+            padding-bottom: 180px;
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 996px) {
+    .footer-container {
+        padding  : 24px 12px;
+        flex-wrap: wrap;
+        gap      : 36px;
+        height   : auto;
+
+        .content-left {
+            width         : 40%;
+            display       : flex;
+            flex-direction: column;
+            gap           : 8px;
+        }
+
+        .content-center {
+            width    : 40%;
+            font-size: 14px;
+        }
+
+        .content-right {
+            width         : 100%;
+            padding-bottom: 180px;
+        }
+    }
+}
+
+@media (min-width: 997px) and (max-width: 1200px) {
+    .footer-container {
+        padding: 24px 12px;
+        gap    : 36px;
+        height : auto;
+
+        .content-left {
+            display       : flex;
+            flex-direction: column;
+            gap           : 8px;
+        }
+
+        .content-center {
+            font-size: 14px;
+        }
+
+        .content-right {
+            width         : 351px;
+            padding-bottom: 180px;
+        }
+    }
+}
