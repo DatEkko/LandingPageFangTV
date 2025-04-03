@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const defaultMetadata: Metadata = {
+export const homepageMetadata: Metadata = {
     title: {
         default: "FangTV - Xem & Tạo Video Ngắn, Livestream",
         template: "%s | FangTV",
@@ -28,4 +28,14 @@ export const defaultMetadata: Metadata = {
         ],
         locale: "vi_VN",
     },
+};
+
+export const notFoundMetadata: Metadata = {
+    title: {
+        default: "FangTV - Page Not Found",
+        template: "%s | FangTV",
+    },
+    description: "The page you are looking for does not exist",
+    keywords: "miễn phí, video ngắn, livestream, short video, live stream, fangtv, reels",
+    robots: "noindex, nofollow",
 };

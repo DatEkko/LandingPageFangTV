@@ -1,8 +1,8 @@
 import HeropageComponent from "@/components/homepage/heropage/HeropageComponent";
 import OverviewSection from "@/components/homepage/overviewSection/OverviewSection";
-import { defaultMetadata } from "./metadata";
+import { homepageMetadata } from "./metadata";
 
-export const metadata = defaultMetadata;
+export const metadata = homepageMetadata;
 
 const Home = () => {
   return (

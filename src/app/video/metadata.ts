@@ -22,7 +22,7 @@ export async function fetchVideoPageMetadata() {
     } catch (error) {
         console.error("Error fetching metadata:", error);
         return {
-            title: "FangTV - Trang xem video",
+            title: "FangTV - Trang xem video Error",
             description: "Xem video tại FangTV.",
             keywords: "FangTV, livestream, video ngắn",
             openGraph: {
